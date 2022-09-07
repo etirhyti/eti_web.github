@@ -7,35 +7,35 @@
     <title>T02-PWD22-41215593-Eti Rohayati</title>
     <style>
         body{
-            background-image: url(...jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
+            background-image: url(b.jpg);
             height: 100vh;
-            background-color: rgb(133, 129, 129);
-            display: block;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
 
         .hal {
-            background-color: white;
+            background-color: rgb(255,255, 255, 0.3);
             border-radius: 30px;
             padding: 10px;
-            width: 350px;
-            height: 350px;
-            margin: auto;
-            margin-top: 200px;
+            width: 200px;
+            height: 250px;
             box-shadow: 0 8px 16px 0 rgb(19, 19, 19);
             transition: 0.4s;
         }
 
         .hal:hover{
+            background-color: azure;
             transform: scale(1.1);
             transition: 0.2s;
-            opacity: 100%;B
-            box-shadow: 0 8px 16px 0 black;
+            opacity: 100%;
+            box-shadow: 0 8px 16px 0 slategrey;
+            
         }
 
         .hal h1 {
+            font-size: 25px;
             text-align: center;
         }
 
@@ -43,23 +43,118 @@
             text-align: center;
         }
 
+        .poto {
+            width: 200px;
+            height: 100px;
+            background-image: url(e.jpg);
+            background-size: cover;
+            background-position: center;
+            opacity: 70%;
+        }
+
+        .poto:hover {
+            opacity: 100%;
+        }
         .hal2 {
-            background-color: rgb(215, 214, 214);
+            margin-top: 10px;
+            font-size: 15px;
             height: 170px;
         }
+
+        .tombol1 {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(255,255, 255, 0.3);
+            margin-right: 25px;
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px 0 rgb(19, 19, 19);
+            transition: 0.5s;
+        }
+
+        .tombol2 {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(255,255, 255, 0.3);
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px 0 rgb(19, 19, 19);
+            transition: 0.5s;
+        }
+
+        .tombol3 {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(255,255, 255, 0.3);
+            margin-left: 25px;
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px 0 rgb(19, 19, 19);
+            transition: 0.5s;
+        }
+
+        .tombol1 h3{
+            margin: 5px;
+        }
+
+        .tombol2 h3{
+            margin: 5px;
+        }
+
+        .tombol3 h3{
+            margin: 15px;
+        }
+
+        .tombol1:hover{
+            background-color: azure;
+            transform: scale(1.1);
+            transition: 0.2s;
+            opacity: 100%;
+            box-shadow: 0 8px 16px 0 slategrey;
+        }
+
+        .tombol2:hover{
+            background-color: azure;
+            transform: scale(1.1);
+            transition: 0.2s;
+            opacity: 100%;
+            box-shadow: 0 8px 16px 0 slategrey;
+        }
+        .tombol3:hover{
+            background-color: azure;
+            transform: scale(1.1);
+            transition: 0.2s;
+            opacity: 100%;
+            box-shadow: 0 8px 16px 0 slategrey;
+        }
+
+        li{
+            display: inline-flex;
+
+        }
+
+
+
 
     </style>
 </head>
 <body>
     <div class="hal">
     <h1>About Me</h1>
-    <br>
+    <div class="poto">
+    </div>
     <div class="hal2">
     <h2>Eti Rohayati</h2>
     <h2>41215593</h2>
-    <h2>TI-2021-KIP-P5</h2>
-    <h2>Teknik Informatika</h2>
 </div>
     </div>
+    <li>
+        <div class="tombol1"><h3>Top 10 Best Friends</h3></div>
+        <div class="tombol2"><h3>Top 5 Best Friends</h3></div>
+        <div class="tombol3"><h3>Table JQuery</h3></div>
+    </li>
 </body>
 </html>
