@@ -11,31 +11,48 @@
             align-items: center;
             justify-content: center;
             display: flex;
+            background-color: rgb(145, 141, 141);
         }
 
         .tombol{
-            height: 20px;
-            width: 80px;
-            background-color: white;
-            border: 3px solid;
-            border-radius: 10px;
-            margin-top: 25px;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(188, 164, 188);
+            border: 1px solid;
+            border-radius: 20px;
+            margin-top: 30px;
             transition: 0.3s;
+            align-items: center;
         }
+
+        .tombol h3{
+            margin-top: 10px;
+        }
+
         .tombol:hover {
             background-color: rgb(198, 191, 191);
         }
 
         table tr th{
-            background-color: aquamarine;
+            background-color: rgb(194, 237, 222);
+            transition: 0.4s;
+        }
+
+        table tr th:hover{
+            background-color: rgb(235, 229, 229);
+            transform: scale(1.1);
+            transition: 0.2s;
         }
         
-        table tr rd{
-            background-color: rgb(177, 106, 177);
+        table tr td{
+            background-color: rgb(188, 164, 188);
+            transition: 0.4;
         }
 
         table tr td:hover{
-            background-color: grey;
+            background-color: rgb(198, 191, 191);
+            transform: scale(1.1);
+            transition: 0.2s;
         }
 
         a{
@@ -50,7 +67,7 @@
     <div class="judul">
         <h2>Top 5 Best Friends</h2>
     </div>
-    <table border="1">
+    <table border="1" cellpadding="17" cellspacing="5">
         <tr>
             <th>No</th>
             <th>Nama Teman</th>
@@ -88,7 +105,9 @@
             <td>Edit | Hapus</td>
         </tr>
     </table>
-    <a href="C:/Users/Eti Rohayati/OneDrive/Documents/GitHub/eti_web.github/index.html"><div class="tombol">Back</div></a>
+    <a onClick="alert('Apakah kamu mau kembali?')" href="../index.html">
+        <div class="tombol"><h3>Back</h3></div>
+    </a>
     </center>
 </body>
 </html>
