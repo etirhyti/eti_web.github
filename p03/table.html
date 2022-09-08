@@ -11,6 +11,7 @@
             align-items: center;
             justify-content: center;
             display: flex;
+            background-color: rgb(188, 159, 120);
         }
 
         .tombol{
@@ -22,20 +23,13 @@
             margin-top: 25px;
             transition: 0.3s;
         }
-        .tombol:hover {
-            background-color: rgb(150, 230, 203);
-        }
 
         table tr th{
             background-color: rgb(150, 230, 203);
         }
         
-        table tr rd{
-            background-color: rgb(245, 225, 197);
-        }
-
-        table tr td:hover{
-            background-color: rgb(150, 230, 203);
+        table tr td{
+            background-color: rgb(231, 222, 211);
         }
 
         a{
@@ -50,7 +44,7 @@
     <div class="judul">
         <h2>Top 10 Best Friends</h2>
     </div>
-    <table border="1">
+    <table border="1" cellpadding="12" cellspacing="2">
         <tr>
             <th>No</th>
             <th>Nama Teman</th>
@@ -108,7 +102,7 @@
         <tr>
             <td>9</td>
             <td>Sariah</td>
-            <td>Majalengka</td>
+            <td></td>
             <td>Edit | Hapus</td>
         </tr>
         <tr>
@@ -118,7 +112,9 @@
             <td>Edit | Hapus</td>
         </tr>
     </table>
-    <a href="C:/Users/Eti Rohayati/OneDrive/Documents/GitHub/eti_web.github/index.html"><div class="tombol">Back</div></a>
+    <a onClick="alert('Apakah kamu mau kembali?')" href="../index.html">
+        <div class="tombol">Back</div>
+    </a>
 </center>
 </body>
 </html>
