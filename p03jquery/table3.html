@@ -10,7 +10,7 @@
  $(document).ready(function(){ $('.text').click(function(){ 
  	let text = $(this).text();
   alert(`Anda mengklik text yang berisi text "${text}"`);
-   if(text!='HAPUS'){ 
+   if(text!='Hapus'){ 
    	let text2 = prompt('Mau diubah?:', text);
     if(!text2) return; $(this).text(text2); }
     else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
