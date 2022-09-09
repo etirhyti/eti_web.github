@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Table</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+ $(document).ready(function(){ $('.text').click(function(){ 
+ 	let text = $(this).text();
+  alert(`Anda mengklik text yang berisi text "${text}"`);
+   if(text!='HAPUS'){ 
+   	let text2 = prompt('Mau diubah?:', text);
+    if(!text2) return; $(this).text(text2); }
+    else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
+</script>
+
+
+    <style>
+         body{
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-color: rgb(145, 141, 141);
+        }
+
+        .tombol{
+            height: 40px;
+            width: 100px;
+            background-color: rgb(194, 237, 222);
+            border: 1px solid;
+            border-radius: 20px;
+            margin-top: 30px;
+            transition: 0.3s;
+            align-items: center;
+        }
+
+        .tombol h3{
+            margin-top: 10px;
+        }
+
+        .tombol:hover {
+            background-color: rgb(198, 191, 191);
+        }
+
+        table tr th{
+            background-color: rgb(183, 146, 183);
+            transition: 0.4s;
+        }
+
+        table tr th:hover{
+            background-color: rgb(235, 229, 229);
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+        
+        table tr td{
+            background-color: rgb(194, 237, 222);
+            transition: 0.4;
+        }
+
+        table tr td:hover{
+            background-color: rgb(198, 191, 191);
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="judul">
+        <h2>Top 5 Best Friends</h2>
+    </div>
+    <table border="1" cellpadding="17" cellspacing="5">
+        <tr>
+            <th>No</th>
+            <th>Nama Teman</th>
+            <th>Alamat</th>
+            <th>Aksi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="text" id="nama1">Adhivia Julian</td>
+            <td class="text" id="alamat1">Ciamis</td>
+            <td class="text" id="hapus1">Hapus</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="text" id="nama2">Pitria Khoirunisa</td>
+            <td class="text" id="alamat2">Ciamis</td>
+            <td class="text" id="hapus2">Hapus</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="text" id="nama3">Dina Fitri Siti Anjani</td>
+            <td class="text" id="alamat3">Ciamis</td>
+            <td class="text" id="hapus3">Hapus</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="text" id="nama4">Nurul Jamila</td>
+            <td class="text" id="alamat4">Ciamis</td>
+            <td class="text" id="hapus4">Hapus</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="text" id="nama5 ">Siti Nur Alifah</td>
+            <td class="text" id="alamat5">Majalengka</td>
+            <td class="text" id="hapus5">Hapus</td>
+        </tr>
+    </table>
+    <a onClick="alert('Apakah kamu mau kembali?')" href="../index.html">
+        <div class="tombol"><h3>Back</h3></div>
+    </a>
+    </center>
+</body>
+</html>
