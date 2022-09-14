@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
+      body {
+        background-color: rgb(0, 0, 0);
+        padding: 0 10px;
+      }
+      .plastik {
+        max-width: 500px;
+        width: 100%;
+        background-color: rgb(214, 212, 212);
+        margin: 20px auto;
+        padding: 30px;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+      }
+      .plastik .judul {
+        font-size: 20px;
+        font-weight: 700px;
+        margin-bottom: 25px;
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .plastik .isiform {
+        width: 100%;
+      }
+      .plastik .isiform .isibadan {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+      .plastik .isiform .isibadan label {
+        width: 200px;
+        color: #272626;
+        margin-right: 10px;
+        font-size: 14px;
+      }
+      .plastik .isiform .isibadan .masukan,
+      .plastik .isiform .isibadan .area_huruf {
+        width: 100%;
+        outline: none;
+        border: 1px solid rgb(46, 45, 45);
+        font-size: 15px;
+        padding: 8px 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      .plastik .isiform .isibadan .area_huruf {
+        resize: none;
+        width: 100%;
+        height: 100px;
+      }
+      .plastik .isiform .isibadan .editselect {
+        width: 100%;
+        height: 37px;
+        position: relative;
+      }
+      .plastik .isiform .isibadan .editselect:before {
+        position: absolute;
+        content: "";
+        top: 12px;
+        right: 10px;
+        border: 8px solid;
+        border-color: #6c877e transparent transparent transparent;
+        pointer-events: none;
+      }
+      .plastik .isiform .isibadan .editselect select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 100%;
+        height: 100%;
+        appearance: none;
+        outline: none;
+        border: 0px;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 1px solid #d5dbd9;
+        border-radius: 3px;
+      }
+      .plastik .isiform .isibadan .masukan:focus,
+      .plastik .isiform .isibadan .area_huruf:focus,
+      .plastik .isiform .isibadan .editselect select:focus {
+        border: 1px solid blue;
+      }
+      .plastik .isiform .isibadan p {
+        font-size: 14px;
+        color: #757575;
+      }
+      .plastik .isiform .isibadan .centang {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        display: block;
+        cursor: pointer;
+      }
+      .plastik .isiform .isibadan .centang input[type="checkbox"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+      .plastik .isiform .isibadan .centang .tanda_centang {
+        width: 15px;
+        height: 15px;
+        border: 1px solid blue;
+        display: block;
+        position: relative;
+      }
+      .plastik .isiform .isibadan .centang .tanda_centang:before {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 2px;
+        width: 5px;
+        height: 2px;
+        border: 2px solid;
+        border-color: transparent transparent #fff #fff;
+        transform: rotate(-45deg);
+        display: none;
+      }
+      .plastik
+        .isiform
+        .isibadan
+        .centang
+        input[type=":checkbox"]:checked
+        ~ .tanda_centang {
+        background: blue;
+      }
+      .plastik
+        .isiform
+        .isibadan
+        .centang
+        input[type=":checkbox"]:checked
+        ~ .tanda_centang:before {
+        display: block;
+      }
+      .plastik .isiform .isibadan .btn {
+        width: 100%;
+        padding: 8px 10px;
+        font-size: 15px;
+        border: 0px;
+        background: rgb(70, 70, 113);
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+      }
+      .plastik .isiform .isibadan .btn:hover {
+        background: rgb(128, 123, 123);
+      }
+      .plastik .isiform .isibadan:last-child {
+        margin-bottom: 0;
+      }
+      .kopsurat img {
+        width: 450px;
+        height: 80px;
+      }
+      @media (max-width: 420px) {
+        .plastik .isiform .isibadan {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .plastik .isiform .isibadan label {
+          margin-bottom: 5px;
+        }
+        .kopsurat img {
+            max-width: 300px;
+        }
+        .plastik .isiform .isibadan_1 {
+          flex-direction: row;
+        }
+      }
