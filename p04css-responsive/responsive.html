@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir PMB</title>
+    <link rel="stylesheet" href="style_etirohayati.css">
+</head>
+<body>
+    <div class="plastik">
+        <div class="kopsurat"><img src="./kop surat.jpg" alt="ini kop surat"></div>
+      <div class="judul">
+        Formulir Pendaftaran Mahasiswa Baru
+      </div>
+      <div class="isiform">
+        <div class="isibadan">
+          <label>No Pendaftaran</label>
+          <input type="tel" class="masukan" name="nopendaftaran" placeholder="No Pendaftaran" required/>
+        </div>
+        <div class="isibadan">
+          <label>Jurusan</label>
+          <div class="editselect">
+            <select>
+              <option value=""></option>
+              <option value="ti">Teknik Informatika (S1)</option>
+              <option value="si">Sistem Informasi</option>
+              <option value="rpl">Rekayasa Perangkat Lunak (S1)</option>
+              <option value="mi">Manajemen Informatika (D3)</option>
+              <option value="ka">Komputerisasi Akuntasi (D3)</option>
+            </select>
+          </div>
+        </div>
+        <div class="isibadan">
+          <label>Nama Lengkap</label>
+          <input type="text" class="masukan" name="nama lengkap" placeholder="Nama Lengkap" required/>
+        </div>
+        <div class="isibadan">
+          <label>NIK (KTP)</label>
+          <input type="tel" class="masukan" name="nik(ktp)" placeholder="NIK (KTP)" required/>
+        </div>
+        <div class="isibadan">
+          <label>Tempat Lahir</label>
+          <input type="text" class="masukan" name="tempatlahir" placeholder="Tempat Lahir" required/>
+        </div>
+        <div class="isibadan">
+          <label>Tanggal Lahir</label>
+          <input type="date" class="masukan" name="tanggallahir" required/>
+        </div>
+        <div class="isibadan">
+          <label>Jenis Kelamin</label>
+          <div class="editselect">
+            <select>
+              <option value=""></option>
+              <option value="laki-laki">laki-laki</option>
+              <option value="perempuan">Perempuan</option>
+            </select>
+          </div>
+        </div>
+        <div class="isibadan">
+            <label>Agama</label>
+            <div class="editselect">
+              <select>
+                <option value=""></option>
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu </option>
+                <option value="budha">Budha</option>
+                <option value="lainnya">Lainnya</option>
+              </select>
+            </div>
+          </div>
+        <div class="isibadan">
+          <label>Email</label>
+          <input type="text" class="masukan" name="email" placeholder="xxxxxxxxxxxxxx@gamail.com" required/>
+        </div>
+        <div class="isibadan">
+          <label>No Telepon</label>
+          <input type="tel" class="masukan" name="nohp" placeholder="+62xxxxxxxxxxx" required/>
+        </div>
+        <div class="isibadan">
+          <label>Alamat</label>
+          <textarea class="area_huruf" placeholder="Jl.xxxxxxx"></textarea>
+        </div>
+        <div class="isibadan">
+          <label>Kode Pos</label>
+          <input type="tel" class="masukan" name="kode pos" placeholder="Kode Pos" required/>
+        </div>
+        <table align="right">
+        <div class="isibadan2">
+          <label>Cirebon</label>
+          <input type="date" class="masukan" name="tgl-ttd">
+        </div>
+        <div class="isibadan">
+            <label height="90px"></label>
+        </div>
+        <div class="isibadan3">
+            <input type="text" name="" placeholder="Nama Lengkap">
+        </div>
+        </table>
+        <div class="isibadan_1">
+          <label class="centang">
+            <input type="checkbox" />
+            <span class="tanda_centang"></span>
+          </label>
+          <p>Data ini sudah benar</p>
+        </div>
+        <div class="isibadan">
+          <input type="submit" value="Kirim" class="btn" required/>
+        </div>
+        <div class="isibadan">
+            <a onClick= href="../index.html">
+            <input type="submit" value="Back" class="btn" required/>
+        </a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
