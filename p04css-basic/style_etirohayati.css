@@ -169,18 +169,4 @@
         margin-top: 100px;
         margin-bottom: 20px;
       }
-      @media (max-width: 420px) {
-        .plastik .isiform .isibadan {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .plastik .isiform .isibadan label {
-          margin-bottom: 5px;
-        }
-        img {
-            max-width: 300px;
-        }
-        .plastik .isiform .isibadan_1 {
-          flex-direction: row;
-        }
-      }
+      
