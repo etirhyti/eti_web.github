@@ -178,7 +178,7 @@
           margin-bottom: 5px;
         }
         img {
-            max-width: 300px;
+            max-width: 100%;
         }
         .plastik .isiform .isibadan_1 {
           flex-direction: row;
