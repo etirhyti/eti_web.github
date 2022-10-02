@@ -5,8 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery Delete</title>
-</head>
-<body>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+ $(document).ready(function(){ 
+  $('.nama').click(function(){ 
+ 	let isi = $(this).text();
+    let isi2 =alert('Aksi lain untuk Cell ini belum ada. Terimakasih sudah mencoba.')
+  })
+
+  $('.alamat').click(function(){
+     let isi = $(this).text();
+     let isi2 =alert('Aksi lain untuk Cell ini belum ada. Terimakasih sudah mencoba.') 
+    })
+
+    $('.hapus').click(function(){
+     let yakin = confirm('Anda yakin ingin menghapusnya?');
+     if(!yakin) return;
+
+     let id = $(this).prop('id');
+     let rid = id.split('__');
+     let baris_ke = rid[1];
+     $('#jajar__'+baris_ke).slideUp()
+
+        })
+        }) 
+</script>
     
+    <style>
+        body{
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-color: rgb(226, 226, 226);
+        }
+        .tombol{
+            height: 40px;
+            width: 100px;
+            background-color:  rgb(194, 237, 222);
+            border: 1px solid;
+            border-radius: 20px;
+            margin-top: 30px;
+            transition: 0.3s;
+            align-items: center;
+        }
+
+        .tombol h3{
+            margin-top: 10px;
+        }
+
+        .tombol:hover {
+            background-color: rgb(198, 191, 191);
+        }
+
+        table tr th{
+            background-color: rgb(192, 188, 192);
+            transition: 0.4s;
+        }
+
+        table tr th:hover{
+            background-color: rgb(235, 229, 229);
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+        
+        table tr td{
+            background-color: rgb(211, 241, 230);
+            transition: 0.4;
+        }
+
+        table tr td:hover{
+            background-color: rgb(235, 225, 225);
+            transform: scale(1.1);
+            transition: 0.2s;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            background-color: transparent;
+        }       
+        
+        
+    </style>
+</head>
+
+<body>
+    <center>
+    <div class="judul">
+        <h2>Top 5 Best Friends</h2>
+    </div>
+    <table border="1" cellpadding="15" cellspacing="7">
+        <tr>
+            <th>No</th>
+            <th>Nama Teman</th>
+            <th>Alamat</th>
+            <th>Aksi</th>
+        </tr>
+        <tr id="jajar__1">
+            <td>1</td>
+            <td class="nama">Adhivia Julian</td>
+            <td class="alamat">Ciamis</td>
+            <td class="hapus" id="hapus__1">Hapus</td>
+        </tr>
+        <tr id="jajar__2">
+            <td>2</td>
+            <td class="nama">Pitria Khoirunisa</td>
+            <td class="alamat">Ciamis</td>
+            <td class="hapus" id="hapus__2">Hapus</td>
+        </tr>
+        <tr id="jajar__3">
+            <td>3</td>
+            <td class="nama">Dina Fitri Siti Anjani</td>
+            <td class="alamat">Ciamis</td>
+            <td class="hapus" id="hapus__3">Hapus</td>
+        </tr>
+        <tr id="jajar__4">
+            <td>4</td>
+            <td class="nama">Nurul Jamila</td>
+            <td class="alamat">Ciamis</td>
+            <td class="hapus" id="hapus__4">Hapus</td>
+        </tr>
+        <tr id="jajar__5">
+            <td>5</td>
+            <td class="nama ">Siti Nur Alifah</td>
+            <td class="alamat">Majalengka</td>
+            <td class="hapus" id="hapus__5">Hapus</td>
+        </tr>
+    </table>
+    <a onClick="alert('Apakah kamu mau kembali?')" href="../index.html">
+        <div class="tombol"><h3>Back</h3></div>
+    </a>
+</center>
 </body>
 </html>
