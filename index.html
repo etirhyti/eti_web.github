@@ -132,6 +132,18 @@
             transition: 0.5s;
         }
 
+        .tombol7 {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(255,255, 255, 0.3);
+            margin-left: 25px;
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px 0 rgb(19, 19, 19);
+            transition: 0.5s;
+        }
+
         .tombol1 h3{
             margin: 5px;
         }
@@ -153,6 +165,10 @@
         }
 
         .tombol6 h3{
+            margin: 15px;
+        }
+
+        .tombol7 h3{
             margin: 15px;
         }
 
@@ -196,6 +212,14 @@
         }
 
         .tombol6:hover{
+            background-color: azure;
+            transform: scale(1.1);
+            transition: 0.2s;
+            opacity: 100%;
+            box-shadow: 0 8px 16px 0 slategrey;
+        }
+
+        .tombol7:hover{
             background-color: azure;
             transform: scale(1.1);
             transition: 0.2s;
@@ -247,6 +271,9 @@
         </a>
         <a onClick="alert('Apakah kamu mau ke halaman formulir PMB CSS Resvonsive')" href="./p04css-responsive/responsive.html">
         <div class="tombol6"><h3>Responsive</h3></div>
+        </a>
+        <a onClick="alert('Apakah kamu mau ke halaman jquery-delete')" href="./p05-jquery-delete/index.html">
+        <div class="tombol7"><h3>JQuery Delete</h3></div>
         </a>
     </li>
 </body> 
