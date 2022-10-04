@@ -5,11 +5,18 @@ body {
 .efeknampilnyumput .pencet h2{
     background-color: rgb(218, 217, 217);
     padding: 1%;
-    margin-top: 20%;
+    margin-top: 22%;
     margin-bottom: 0%;
     margin-right: 20%;
     margin-left: 20%;
     border-radius: 25px;
+}
+
+.efeknampilnyumput .pencet h2:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: azure;
+    box-shadow: 0 8px 16px 0 rgb(93, 114, 136);
 }
 
 .efeknampilnyumput .nampilnyumput h3 {
@@ -18,4 +25,8 @@ body {
     margin-right: 20%;
     margin-left: 20%;
     color: rgb(237, 231, 231);
+}
+
+.efeknampilnyumput .nampilnyumput h3:hover{
+    box-shadow: 0 8px 16px 0 rgb(93, 114, 136);
 }
