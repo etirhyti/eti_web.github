@@ -1,0 +1,75 @@
+body {
+    background-color: aquamarine;
+    padding-left: 23%;
+    padding-right: 23%;
+}
+
+.sadaya {
+    background-color: white;
+    padding-bottom: 100%;
+}
+
+.sadaya .kop .logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 5%;
+    margin-right: 0 auto;
+    margin-top: 5%;
+}
+
+.sadaya .kop .sakola h6 {
+    font-size: 9.5px;
+    margin-left: 18%;
+    margin-top: -10%;
+}
+
+.sadaya .kop .stmik {
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+    margin-top: -3%;
+    margin-left: 18%;
+}
+
+.sadaya .kop .ikmi {
+    font-size: 35px;
+    font-weight: bold;
+    color: blue;
+    margin-top: -7.6%;
+    margin-left: 45%;
+}
+
+.sadaya .kop .cirebon {
+    font-weight: bold;
+    color: green;
+    margin-top: -0.8%;
+    margin-left: 45.5%;
+}
+
+.sadaya .kop .alamat {
+    font-size: 12px;
+    margin-top: -8.7%;
+    margin-left: 60%;
+}
+
+.sadaya .kop .tengah .sk{
+    background-color: rgb(150, 27, 27);
+    margin-top: 2%;
+    margin-left: 35px;
+    margin-right: 340px;
+    font-size: 14px;
+    padding: 3px;
+    padding-left: 83px;
+    color: white;
+}
+
+.sadaya .kop .tengah .terakreditasi {
+    background-color: green;
+    color: white;
+    margin-top: -2.9%;
+    margin-right: 43px;
+    margin-left: 463px;
+    font-size: 14px;
+    padding: 3.1px;
+    padding-left: 60px;
+}
