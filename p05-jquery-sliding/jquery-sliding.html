@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Sliding</title>
+    <link rel="stylesheet" href="eti-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $(".pencet").click(function()
+            {
+                $(".nampilnyumput").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+        <div class="efeknampilnyumput">
+            <div class="pencet"><h2>About Me</h2></div>
+            <div class="nampilnyumput">
+                <h3>Hi! My name is Eti Rohayati. I come from Ciamis but now I live in Cirebon and study at STMIK IKMI Cirebon. I'm currently in semester 3, majoring in Informatics Engineering.
+                </br>
+                I love reading novels, of course. My favorite day is Sunday because that day I can read my favorite novels, especially fiction themed ones. 
+                </br>
+                Thank you.</h3>            
+            </div>
+        </div>
+    </center>
+</body>
+</html>
