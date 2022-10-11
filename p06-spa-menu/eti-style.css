@@ -4,7 +4,6 @@ body {
 
 .sadaya {
   width: 100%;
-  max-width: 60rem;
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -14,16 +13,36 @@ body {
   letter-spacing: 1px;
   font-weight: bold;
   color: white;
+  margin-left: 50px;
 }
 
 #baris-nav {
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: black;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
-  padding: 11px;
+  box-shadow: 0px 10px 10px 0px rgba(129, 118, 118, 0.4);
+  height: 90px;
   border-radius: 8px;
+}
+
+#baris-nav a{
+  text-decoration: none;
+}
+
+#lebet_1 {
+  padding-right: 50px;
+}
+
+#lebet_2 {
+  padding-right: 50px;
+}
+
+#lebet_3 {
+  padding-right: 50px;
 }
 
 .lebet-utami {
@@ -46,6 +65,9 @@ body {
 }
 
 .aktif {
-  background-color: grey;
+  border-radius: 25px;
+  transform: scale(1.1);
+  transition: 0.2s;
+  box-shadow: 0 8px 16px 0 slategrey;
 }
 
