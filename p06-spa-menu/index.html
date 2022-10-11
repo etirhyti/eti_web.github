@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPA Menu</title>
-    <link rel="stylesheet" href="eti-style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add class for SPA</title>
+    <link rel="stylesheet" href="eti-style.css" />
+    <link rel="icon" href="../img/moon.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        
-    </script>
-</head>
-<body>
-    <div class="bungkus">
-        <div class="lebet">
-            <div class="lebetna">
-                <div class="nami"><a href="../index.html">Eti Rohayati <br> 41215593</a></div>
-            </div>
-            <ul class="baris">
-                <li><a href="home">Home</a></li>
-                <li><a href="class" class="active">About</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li><img src="aset/eti.jpeg" alt="ini gambar"></li>
-            </ul>
+  </head>
+  <body>
+    <div class="sadaya">
+      <div id="baris-nav">
+        <div id="plang">My Portfolio</div>
+        <div class="lebetna">
+          <span class="lebet aktif" id="lebet_1">Home</span>
+          <span class="lebet" id="lebet_2">Assignment</span>
+          <span class="lebet" id="lebet_3">Contact</span>
         </div>
+      </div>
+      <div style="display: block" class="lebet-utami" id="lebetna_1">
+        <p>Nothing</p>
+      </div>
+      <div style="display: none" class="lebet-konten" id="lebetna_2">
+        <h2>My Assignment</h2>
+        <p>Coming soon</p>
+      </div>
+      <div style="display: none" class="lebet-konten" id="lebetna_3">
+        <h2>My Contact</h2>
+        <p>Contact me</p>
+      </div>
     </div>
-</body>
+    <script src="jquey.js"></script>
+  </body>
 </html>
-

@@ -1,96 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
+  background-color: darkgrey;
 }
 
-.bungkus {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-    background-color: antiquewhite;
+.sadaya {
+  width: 100%;
+  max-width: 60rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+#plang {
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: white;
+}
+
+#baris-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+  padding: 11px;
+  border-radius: 8px;
 }
 
 .lebet {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    font-size: 23px;
-    padding: 15px;
-    width: 100%;
-    height: 90px;
-    background-color: rgb(0, 0, 0);
+  padding: 7px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 14px;
 }
 
-.lebetna {
-    display: flex;
-    flex-direction: column;
-    font-size: 25px;
-    padding: 15px;
+.lebet-utami {
+  padding: 14px;
+  text-align: justify;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-.nami a  {
-    color: rgb(235, 240, 244);
-    text-decoration: none;
-    text-transform: uppercase;
+.lebet-konten {
+  padding: 12px;
+  margin-top: 10px;
+  display: none;
+  border-radius: 8px;
+  text-align: justify;
+  background-color: white;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-.baris {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.menu:hover {
+  background-color: gray;
 }
 
-.baris li {
-    list-style-type: none;
-    padding-right: 100px;
-    padding-top: 26px;
-}
-
-.baris li a {
-    color: beige;
-    font-size: 23px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.baris li a:hover {
-    color: rgb(235, 240, 244);
-    transition: 0.3s;
-    transform: scale(1.1);
-    box-shadow: 0 6px 16px 4px rgb(235, 240, 244);
-}
-
-.baris li img {
-    width: 60px;
-    height: 65px;
-    border-radius: 50px;
-    margin-top: -10px;
-}
-
-.baris li img:hover {
-    width: 80px;
-    height: 80px;
-    border-radius: 80px;
-    transition: 0.5s;
-}
-
-.active {
-    font-weight: bold;
-}
-
-.hiji, .hiji2, .hiji3 {
-    padding: 2%;
-    margin-top: 0%;
-    margin-right: 20%;
-    margin-left: 20%;
-    color: rgb(237, 231, 231);
-    text-align: center;
+.aktif {
+  background-color: grey;
 }
