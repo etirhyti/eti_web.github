@@ -27,6 +27,7 @@ body {
     width: 100%;
     height: 90px;
     background-color: rgb(0, 0, 0);
+    box-shadow: 0 6px 16px 4px rgb(235, 178, 103);
 }
 
 .lebetna {
@@ -48,8 +49,14 @@ body {
     text-align: center;
 }
 
+.baris .ieu {
+    margin-top: 120px;
+    background-color: aquamarine;
+}
+
 .baris li {
     list-style-type: none;
+    margin-left: 0%;
     padding-right: 100px;
     padding-top: 26px;
 }
@@ -86,11 +93,4 @@ body {
     font-weight: bold;
 }
 
-.hiji, .hiji2, .hiji3 {
-    padding: 2%;
-    margin-top: 0%;
-    margin-right: 20%;
-    margin-left: 20%;
-    color: rgb(237, 231, 231);
-    text-align: center;
-}
+

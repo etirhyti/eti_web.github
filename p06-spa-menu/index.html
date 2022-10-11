@@ -8,7 +8,15 @@
     <link rel="stylesheet" href="eti-style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-        
+        $(document).ready(function()
+        {
+            $(".baris").click(function()
+            {
+                $(".ieu").slideToggle("slow");
+            });
+
+            
+        });
     </script>
 </head>
 <body>
@@ -18,13 +26,17 @@
                 <div class="nami"><a href="../index.html">Eti Rohayati <br> 41215593</a></div>
             </div>
             <ul class="baris">
-                <li><a href="home">Home</a></li>
-                <li><a href="class" class="active">About</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="">Home</a></li>
+                <div class="ieu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, perspiciatis!</div>
+                <li><a href="" class="active">About</a></li>
+                <li><a href="">Contact</a></li>
                 <li><img src="aset/eti.jpeg" alt="ini gambar"></li>
             </ul>
         </div>
     </div>
 </body>
 </html>
+
+
+
 
