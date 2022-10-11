@@ -7,7 +7,7 @@
     <title>T02-PWD22-41215593-Eti Rohayati</title>
     <style>
         body{
-            background-image: url(b.jpg);
+            background-image: url(./img/b.jpg);
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -43,10 +43,10 @@
             text-align: center;
         }
 
-        .poto {
+        .hal .poto {
             width: 200px;
             height: 100px;
-            background-image: url(e.jpg);
+            background-image: url(./img/e.jpg);
             background-size: cover;
             background-position: center;
             opacity: 70%;
@@ -144,6 +144,18 @@
             transition: 0.5s;
         }
 
+        .tombol8 {
+            width: 150px;
+            height: 50px;
+            background-color: rgb(255,255, 255, 0.3);
+            margin-left: 25px;
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px 0 rgb(19, 19, 19);
+            transition: 0.5s;
+        }
+
         .tombol1 h3{
             margin: 5px;
         }
@@ -169,6 +181,10 @@
         }
 
         .tombol7 h3{
+            margin: 15px;
+        }
+
+        .tombol8 h3{
             margin: 15px;
         }
 
@@ -227,6 +243,14 @@
             box-shadow: 0 8px 16px 0 slategrey;
         }
 
+        .tombol8:hover{
+            background-color: azure;
+            transform: scale(1.1);
+            transition: 0.2s;
+            opacity: 100%;
+            box-shadow: 0 8px 16px 0 slategrey;
+        }
+
         li{
             display: inline-flex;
         }
@@ -245,12 +269,11 @@
 <body>
     <div class="hal">
     <h1>About Me</h1>
-    <div class="poto">
-    </div>
+    <div class="poto"></div>
     <div class="hal2">
     <h2>Eti Rohayati</h2>
     <h2>41215593</h2>
-</div>
+    </div>
     </div>
     <li>
         <a onClick="alert('Apakah kamu mau ke halaman tabel top 10 best friends')" href="./p03/table.html">
