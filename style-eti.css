@@ -139,19 +139,19 @@ body {
 }
 
 .luhur h2 {
-    font-size: 36px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 300px;
     color: antiquewhite;
 }
 
 .luhur p {
-    font-size: 36px;
-    font-weight: 300;
+    font-weight: 150px;
+    font-size: 20px;
     color: antiquewhite;
 }
 
 .tengah {
-    width: 100px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,15 +166,80 @@ body {
 
 .bok {
     position: relative;
-    padding: 20px 0;
+    padding: 15px 0;
     display: flex;
 }
 
-.serat{
+.serat {
     display: flex;
-    margin-left: 20px;
-    font-size: 16px;
+    margin-left: 15px;
+    font-size: 15px;
     color: antiquewhite;
+    flex-direction: column;
+    font-weight: 150;
+}
+
+.serat h3 {
+    font-weight: 300;
+    color: aquamarine;
+}
+
+.kontakform {
+    width: 38%;
+    padding: 38px;
+    background: rgb(247, 235, 219);
+    border-radius: 10%;
+}
+
+.kontakform h2 {
+    font-size: 25px;
+    color: black;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputbox input, .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: gray;
+}
+
+.inputbox input:focus ~ span, .inputbox input:valid ~ span,
+.inputbox textarea:focus ~ span, .inputbox textarea:valid ~ span  {
+    color: rgb(234, 56, 82);
+    font-weight: bold;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.inputbox input[type="submit"] {
+    width: 100px;
+    background: rgb(248, 217, 175);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 13%;
 }
   
 .aktif {
@@ -183,4 +248,32 @@ body {
     transition: 0.2s;
     box-shadow: 0 8px 16px 0 slategrey;
 }
+
+@media screen and (max-width: 600px) {
+    .sadaya {
+        padding: 50px;
+    }
+    #baris-nav {
+        width: 100%;
+    }
+    #lebetna_1 {
+        display: block;
+    }
+    #lebetna_2 {
+        display: none;
+    }
+    .kontak {
+        padding: 50px;
+    }
+    .luhur {
+        flex-direction: column;
+    }
+    .luhurinfo {
+        margin-bottom: 40px;
+    }
+    .kontakform {
+        width: 100%;
+    }
+}
+
   
