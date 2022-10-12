@@ -251,7 +251,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .sadaya {
-        padding: 50px;
+        width: 100%;
     }
     #baris-nav {
         width: 100%;
@@ -260,10 +260,11 @@ body {
         display: block;
     }
     #lebetna_2 {
+        width: 100%;
         display: none;
     }
     .kontak {
-        padding: 50px;
+        width: 100%;
     }
     .luhur {
         flex-direction: column;
