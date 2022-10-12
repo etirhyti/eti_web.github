@@ -249,32 +249,3 @@ body {
     box-shadow: 0 8px 16px 0 slategrey;
 }
 
-@media screen and (max-width: 600px) {
-    .sadaya {
-        width: 100%;
-    }
-    #baris-nav {
-        width: 100%;
-    }
-    #lebetna_1 {
-        display: block;
-    }
-    #lebetna_2 {
-        width: 100%;
-        display: none;
-    }
-    .kontak {
-        width: 100%;
-    }
-    .luhur {
-        flex-direction: column;
-    }
-    .luhurinfo {
-        margin-bottom: 40px;
-    }
-    .kontakform {
-        width: 100%;
-    }
-}
-
-  
